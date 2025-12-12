@@ -4,6 +4,12 @@ The platform allows users to browse products, search by name, view detailed prod
 
 ---
 
+## 🚀 Live Demo  
+*(Add your deployed link here — Netlify / Vercel)*  
+👉 https://your-product-showcase-demo-link.com
+
+---
+
 ## ✨ Features  
 - ⚡ **Built with Vite** — extremely fast development & production builds  
 - 🎨 **Modern Dark Mode UI** — clean, minimal, professional  
@@ -100,6 +106,7 @@ Copy code
 
 The app uses **React Router v6**:
 
+```jsx
 <BrowserRouter>
   <Routes>
     <Route element={<Layout />}>
