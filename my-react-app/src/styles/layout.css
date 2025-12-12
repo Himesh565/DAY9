@@ -1,0 +1,55 @@
+/* HEADER */
+.site-header {
+  background: var(--card-bg);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.logo {
+  height: 40px;
+}
+
+/* NAV LINKS */
+.site-nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--muted);
+  transition: 0.2s;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+/* FOOTER */
+.site-footer {
+  margin-top: 40px;
+  padding: 14px 0;
+  background: var(--card-bg);
+  border-top: 1px solid #ddd3;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: center;
+  opacity: 0.8;
+}

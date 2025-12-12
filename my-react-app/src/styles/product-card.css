@@ -1,0 +1,77 @@
+.product-card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover Lift Effect */
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Image Section */
+.product-image {
+  width: 100%;
+  height: 180px; /* FIXED HEIGHT */
+  background: #111827;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.25s ease;
+}
+
+/* Slight zoom on hover */
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+/* Content Section */
+.product-content {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title */
+.product-title a {
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.product-title a:hover {
+  color: var(--accent);
+}
+
+/* Description */
+.product-desc {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.4;
+  min-height: 38px; /* Balanced height for alignment */
+}
+
+/* Bottom Section → Price + Button */
+.product-bottom {
+  margin-top: auto; /* Keeps bottom section aligned */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent);
+}
